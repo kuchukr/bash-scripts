@@ -4,7 +4,7 @@
 useradd -m -d /home/ansible ansible
 mkdir /home/ansible/.ssh
 chown -R ansible:ansible /home/ansible/.ssh
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCY4cNhoi5aiJgdVJTqsQl7wHm0KEKq67B0x6aj/Y62zXV0gR5t14xNHjW5YFtn5Nzd8vufSnjyu3oZPbjw1cK/c85RlrbJUq71lK7HIfmRx4HGgv+dcYaQfPwx1zVPou93YseWFfRImZzd/WhXi/ol6/WKgUmo/1DUw14W/UwTEWseFrcwwozWWKaHxdUU850hQ01ZQVm5GCpkWzfVrP2yESFHmmYD6ff5NkE+XjPd/9ghLfv20UnRutn3EbEEgmOzaeQ14epUMKujeQ57ww7YmWbageOfzL2h00AD8s55CwUDu+5g5tf5F/j0IydcZul7qUk8bXYDWj4xjilXaXcP root@mgmt" >> /home/ansible/.ssh/authorized_keys
+echo "your ansible user of local machine" >> /home/ansible/.ssh/authorized_keys
 chmod 744 /home/ansible/.ssh/authorized_keys
 
 cat <<EOT >> /etc/sudoers
